@@ -1,13 +1,14 @@
 
 
-import { ImageBackground } from 'react-native';
 import * as DocumentPicker from 'expo-document-picker';
-import { StyleSheet, View, Image, Text } from 'react-native';
+import {
+  StyleSheet, View, Image,
+  Text, ImageBackground,
+  TouchableOpacity, Dimensions,
+} from 'react-native';
 
 import backgroundImg from '../../assets/img/background.jpg';
-import { TouchableOpacity } from 'react-native';
 import SvgAddButton from '../../assets/svg/SvgAddButton';
-import { Dimensions } from 'react-native';
 import { useState } from 'react';
 
 const ProfileScreen = () => {

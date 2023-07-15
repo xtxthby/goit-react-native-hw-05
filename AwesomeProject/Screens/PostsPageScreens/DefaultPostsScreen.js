@@ -1,4 +1,7 @@
-import { FlatList, Image, StyleSheet, Text, View  } from 'react-native';
+
+import { FlatList, Image } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { Text, View } from 'react-native';
 
 import { useEffect, useState } from 'react';
 import PostsItem from '../../components/PostsItem/PostsItem';
@@ -11,7 +14,7 @@ const DefaultPostsScreen = ({ route }) => {
         'file:///data/user/0/host.exp.exponent/cache/ExperienceData/%2540anonymous%252Fgoit-react-native-hw-05-dbed3e8b-5429-4e6e-a6ba-fefe43283569/Camera/1609f830-6073-4560-8596-6f26f450b3a3.jpg',
       postName: 'олл',
       postAddress: 'Ucraine',
-      postLocation: { latitude: 48.383022, longitude: 31.1828699 },
+      postLocation: { latitude: 50.2938739, longitude: 28.9451193 },
     },
   ]);
 

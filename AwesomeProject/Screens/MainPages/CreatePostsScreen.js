@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { Camera } from 'expo-camera';
 import * as MediaLibrary from 'expo-media-library';
+import { useNavigation, useIsFocused } from '@react-navigation/native';
 
 import * as Location from 'expo-location';
 
@@ -14,7 +15,6 @@ import {
 import SvgTrash from '../../assets/svg/SvgTrash';
 import SvgLocation from '../../assets/svg/SvgLocation';
 import SvgLoadPost from '../../assets/svg/SvgLoadPost';
-import { useNavigation, useIsFocused } from '@react-navigation/native';
 
 const CreatePostsScreen = () => {
   const navigation = useNavigation();
@@ -81,7 +81,12 @@ const CreatePostsScreen = () => {
 
     handleKeyboardHide();
     // Передача параметрів і перенаправлення
-    navigation.navigate('Default', { postImg, postName: postName.trim(), postAddress: postAddress.trim(), postLocation, });
+    navigation.navigate('DefaultPosts', {
+      postImg,
+      postName: postName.trim(),
+      postAddress: postAddress.trim(),
+      postLocation,
+    });
     clearForm();
   };
 

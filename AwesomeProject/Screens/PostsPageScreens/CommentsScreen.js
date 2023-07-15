@@ -13,17 +13,17 @@ const CommentsScreen = ({ navigation, route: { params } }) => {
     {
       autorAvatar: '',
       comment: 'Comment 1sknnn',
-      date: '09 червня, 2020 | 08:40',
+      date: '15 липня, 2023 | 08:40',
     },
     {
       autorAvatar: '',
       comment: 'Comment 2sknnn',
-      date: '09 червня, 2020 | 08:40',
+      date: '15 липня, 2023 | 08:40',
     },
     {
       autorAvatar: '',
       comment: 'Comment 3sknnn',
-      date: '09 червня, 2020 | 08:40',
+      date: '15 липня, 2023 | 08:40',
     },
   ]);
 
@@ -41,7 +41,7 @@ const CommentsScreen = ({ navigation, route: { params } }) => {
     const data = {
       autorAvatar: '',
       comment: commentText,
-      date: '09 червня, 2020 | 08:40',
+      date: '15 липня, 2023 | 08:40',
     };
 
     setComment(prev => [...prev, data]);
